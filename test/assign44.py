@@ -17,6 +17,6 @@ def find_duplicates(list_of_numbers):
     
     #start writing your code here
 
-list_of_numbers=[2,3,4]
+list_of_numbers=[12,54,68,759,24,15,12,68,987,758,25,69]
 list_of_duplicates=find_duplicates(list_of_numbers)
 print(list_of_duplicates)

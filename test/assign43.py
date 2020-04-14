@@ -15,4 +15,4 @@ def find_smallest_number(num):
 num=16
 print("The number of divisors :",num)
 result=find_smallest_number(num)
-print("The smallest number having",num," divisors:",result)
+print(result)

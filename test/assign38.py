@@ -1,36 +1,31 @@
 #PF-Assgn-38
-#remaining
+
 def check_double(number):
-#     value=number*2
-#     
-#     number=(str)(number)
-#     
-#     for singles in number:
-#         print singles
-#     
-#     for i in range(0,len(number)):
-#         if(singles[i] in value):
-#             return True
-#         else:
-#             return False
-#         
-    value =number*2
-    value=(str)(value)
-    number=(str)(number)
+    number_list=[]
+    temp=number
+    while(temp>0):
+        rem = temp%10
+        number_list.append(rem)
+        temp=temp//10
     
-    for singles in value:
-        li = list(singles.split(","))
-        print(li)
+    number_list.sort()
     
+    value=number*2
+    x=value
+    lst=[]
+    while(x>0):
+        rem = x%10
+        lst.append(rem)
+        x=x//10
     
-    listToStr = ''.join(map(str, singles))
+    lst.sort()
     
-    if(number==singles):
+    if(number*2==value and lst==number_list):
         return True
     else:
         return False
+        
     
-    #Remove pass and write your logic here
-
+    
 #Provide different values for number and test your program
-print(check_double(125874))
+print(check_double(124874))

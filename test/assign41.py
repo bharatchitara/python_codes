@@ -32,7 +32,7 @@ def find_ten_substring(num_str):
     print(lis)
 
             
-num_str='2825302'
+num_str='3523014'
 print("The number is:",num_str)
 
 result_str=find_ten_substring(num_str)
